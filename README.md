@@ -57,17 +57,17 @@ The datasets are cleaned up and ready-to-use, true nature of interactions are no
 |19059237|  104|  158|  131|  72|   179|  75|   75|   73|   180|  180|  179|  180|  75|   55|   75|   55|
 |73879930|  0| 0| 0| 75|   77|   162|  75|   75|   75|   75|   75|   111|  111|  55|   75|   55|
 
-Dataset #1:
+### Dataset #1:
 ![](images/dataset-1.png)
 
-Feature Importance Dataset #1:
+#### Feature Importance Dataset #1:
 ![](images/Feature_Importance-1.png)
 
 
-Dataset #2:
+### Dataset #2:
 ![](images/dataset-2.png)
 
-Feature Importance Dataset #2:
+#### Feature Importance Dataset #2:
 ![](images/Feature_Importance-2.png)
 
 ------------
@@ -94,11 +94,11 @@ The model results are shown in the following table from best to worst performer:
 
    Fine tuned the model by GridSearchCV with the hyperparameters to reduce `false positives`. Ran analysis by `{accuracy: {'criterion': 'entropy', 'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'random_state': 93} ` hyperparameters which produced:
 
-Dataset #1:
-![](rf-dataset-1.png)
+#### Dataset #1:
+![](images/rf-dataset-1.png)
 
-Dataset #2:
-![](rf-dataset-2.png)
+#### Dataset #2:
+![](images/rf-dataset-2.png)
 
 ### Next Steps
 Those models will highlight negative customer experiences, so, `false positive` rate should be low but skipping detection of negative experience (`false negative`) is also important considering proactive outreach to customers unnecessarily not so desired on false positive cases. So, the model should minimize misclassifications therefore model `accuracy` should be high as well as the `precision`.
@@ -111,10 +111,10 @@ Performance would be improved by utilizing boosting or neural network for regres
 
 ## Outline of Project
 The functionalities are separated into Jupyter notebook files to execute these following functions:
-1. ![`data.eda.Aykan.ipynb`](data.eda.Aykan.ipynb) is for exploratory data analysis
-2. ![`LogisticRegression.Aykan.ipynb`](LogisticRegression.Aykan.ipynb`) is for executing Logistic Regression model
-3. ![`DecisionTreeClassifier.Aykan.ipynb`](DecisionTreeClassifier.Aykan.ipynb) is for executing Decision Tree Classifier model
-4. ![`RandomForestClassifier.Aykan.ipynb`](RandomForestClassifier.Aykan.ipynb) is for executing Random Forest Classifier model
+1. ![data.eda.Aykan.ipynb](data.eda.Aykan.ipynb) is for exploratory data analysis
+2. ![LogisticRegression.Aykan.ipynb](LogisticRegression.Aykan.ipynb`) is for executing Logistic Regression model
+3. ![DecisionTreeClassifier.Aykan.ipynb](DecisionTreeClassifier.Aykan.ipynb) is for executing Decision Tree Classifier model
+4. ![RandomForestClassifier.Aykan.ipynb](RandomForestClassifier.Aykan.ipynb) is for executing Random Forest Classifier model
 
 
 ------------
