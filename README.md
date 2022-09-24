@@ -111,10 +111,10 @@ Performance would be improved by utilizing boosting or neural network for regres
 ## Outline of Project
 The functionalities are separated into Jupyter notebook files to execute these following functions:
 
-1. ![EDA](./data.eda.Aykan.ipynb) is for exploratory data analysis
-2. ![LogisticRegression](./LogisticRegression.Aykan.ipynb) is for executing Logistic Regression model
-3. ![DecisionTreeClassifier](./DecisionTreeClassifier.Aykan.ipynb) is for executing Decision Tree Classifier model
-4. ![RandomForestClassifier](./RandomForestClassifier.Aykan.ipynb) is for executing Random Forest Classifier model
+1. [data.eda.Aykan.ipynb](./data.eda.Aykan.ipynb) is for exploratory data analysis
+2. [LogisticRegression.Aykan.ipynb](./LogisticRegression.Aykan.ipynb) is for executing Logistic Regression model
+3. [DecisionTreeClassifier.Aykan.ipynb](./DecisionTreeClassifier.Aykan.ipynb) is for executing Decision Tree Classifier model
+4. [RandomForestClassifier.Aykan.ipynb](./RandomForestClassifier.Aykan.ipynb) is for executing Random Forest Classifier model
 
 ------------
 
