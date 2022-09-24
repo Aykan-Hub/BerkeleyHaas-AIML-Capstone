@@ -38,10 +38,11 @@ Each line in the dataset contains a series of 15 previous interactions which are
 *  A records contains 15 customer interaction data points over past 30 days, even if there is more, the set is restricted to the most recent 15 interactions and the dependent variable.
 
 
-The datasets are cleaned up and ready-to-use, true nature of interactions are not enclosed, though. There are 2 datasets, one dataset for 55 and one dataset for 142:
+The datasets are cleaned up and ready-to-use, true nature of interactions are not enclosed, though. There are 2 datasets, one dataset for `55` and one dataset for `142`:
 *  All features are numeric
-*  The data is balanced, there are equal number of target values with 50% distribution.
+*  The data is balanced, there are equal number of target values with 50%-50% distribution.
 *  Missing data elements filled with 0s
+*  No transformation is needed
 *  id is a unique identifier per row which bundles interactions together within the row
 *  `prev_action_15` 
  through
@@ -49,7 +50,7 @@ The datasets are cleaned up and ready-to-use, true nature of interactions are no
     * they contain previous interaction codes, from oldest to newest action code: `prev_action_15` being oldest and `prev_action_1` being most recent in the data model representation
     * If there are not enough data points in client interaction history, 0 will be placed in these previous action columns. Please note, semantically, zeros will start appearing from prev_action_15 (from oldest to newest). 0 cannot be on prev_action_1 which means no entry over 30 days for this client!
 *  `action` is the target column either 55 or 142 depedening on the dataset
-*  Target variable `action` should be transformed to 0 or 1 for binary classification
+*  Target variable `action` should be transformed to `0` or `1` for binary classification
 *  Sample data below:
 
 |id   |prev_action_15   |prev_action_14   |prev_action_13   |prev_action_12   |prev_action_11   |prev_action_10   |prev_action_9 |prev_action_8 |prev_action_7 |prev_action_6 |prev_action_5 |prev_action_4 |prev_action_3 |prev_action_2 |prev_action_1 |action|
