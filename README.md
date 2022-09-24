@@ -92,7 +92,7 @@ The model results are shown in the following table from best to worst performer:
 
 ### Random Forest Classifier
 
-   Fine tuned the model by GridSearchCV with the hyperparameters to reduce `false positives`. Ran analysis by `{accuracy: {'criterion': 'entropy', 'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'random_state': 93} ` hyperparameters which produced metrics well:
+Fine tuned the model by GridSearchCV with the hyperparameters to reduce `false positive`s. Ran analysis by `{accuracy: {'criterion': 'entropy', 'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'random_state': 93} ` hyperparameters which produced metrics well:
 
 #### Dataset #1:
 ![](images/rf-dataset-1.png)
