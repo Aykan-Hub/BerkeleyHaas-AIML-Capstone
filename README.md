@@ -10,7 +10,7 @@ by **Aykan Erdenizmenli**
 
 ## Executive Summary
 
-Customer Interactions give insights about journey trail maps which is essential about their behavior to understand if they are on track or not. When customers deviate from the happy path, consequences may be costly which are called negative experiences.
+Customer Interactions give insights about journey trail maps which is essential about their behavior to understand whether they are on track or not. When customers deviate from the happy path, consequences may be costly which are called negative experiences.
 
 In this Capstone research, data is provided clean, ready-to-use in columnar form containing history (independent variables) and target in single record per customer. 
 
@@ -20,22 +20,22 @@ I am using commercial datasets, therefore, I will not be able to share them publ
 
 ## Rationale
 
-Customer anomaly detection is a critical step to keep them engaged on the platform as majority of negative experiences result with abandoning the platform altogether, hence _churn_ is a costly operation in customer service segment.
+Customer anomaly detection is a critical step to keep them engaged on the platform as majority of negative experiences result in abandoning the platform altogether, hence _churn_ is a costly operation in customer service segment.
 
 ------------
 
 ## Research Question
 
-Negative experiences are known and marked in the system, in this research, the focus is to identify 2 negative experiences coded as `55` and `142` in 2 separate datasets.
+Negative experiences are known and marked in the system, in this research, the focus is to identify 2 negative experiences coded as `55` and `142` by 2 separate datasets.
 
 ------------
 
 ## Data Sources
 
-The data source is customer interactions in the form of events which are contiously collected after each customer interaction, the datasets are generated from the event commercial data source. 
+The data source of customer interactions in the form of events which are contiously collected after each customer interaction, the datasets are generated from the event data. 
 
 Each line in the dataset contains a series of 15 previous interactions which are independent variables and a target interaction column which is the dependent variable:
-*  A records contains 15 customer interaction data points over past 30 days, even if there is more, the set is restricted to the most recent 15 interactions and the dependent variable.
+*  A records contains 15 customer interaction data points over past 30 days, even if there is more, the set is capped at the most recent 15 interactions and a dependent variable.
 
 
 The datasets are cleaned up and ready-to-use, true nature of interactions are not enclosed, though. There are 2 datasets, one dataset for `55` and one dataset for `142`:
@@ -57,30 +57,32 @@ The datasets are cleaned up and ready-to-use, true nature of interactions are no
 |---|---------------|---------------|---------------|---------------|---------------|---------------|-------------   |--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|------|
 |19059237|  104|  158|  131|  72|   179|  75|   75|   73|   180|  180|  179|  180|  75|   55|   75|   55|
 
-### Dataset #1:
+### Dataset #1 - Interaction `142`
 ![](images/dataset-1.png)
 
-#### Feature Importance Dataset #1:
+#### Feature Importance Dataset #1
 ![](images/Feature_Importance-1.png)
 
 
-### Dataset #2:
+### Dataset #2 - Intertion `55`
 ![](images/dataset-2.png)
 
-#### Feature Importance Dataset #2:
+#### Feature Importance Dataset #2
 ![](images/Feature_Importance-2.png)
+
+Most recent entries are highly influential!
 
 ------------
 
 ## Methodology
 
-Binary classification techniques are used in the research, `Logistic Regression`, `Decision Tree Classifier` and `Random Forest Classifier` have been tried out to pick best performance.
+Binary classification techniques are used in the research, `Logistic Regression`, `Decision Tree Classifier` and `Random Forest Classifier` have been tried out to pick the best performer.
 
 ------------
 
 ## Results
 
-The expected result is predicting `action` column in the dataset by utilizing customer history, there are two models per technique to predict action code = `55` and `142` respectively. `Random Forest Classifier` outperformed `Logistic Regression` and `Decision Tree Classifier` models significantly. The performance of `Random Forest Classifier` extremely high in `accuracy` and `precision`  which is satisfactory.
+The expected result is predicting `action` column in the dataset by utilizing customer history, there are two models per technique to predict action code = `55` and `142` respectively. `Random Forest Classifier` outperformed `Logistic Regression` and `Decision Tree Classifier` models significantly. The performance of `Random Forest Classifier` extremely high in `accuracy` and `precision` which is satisfactory.
 
 The model results are shown in the following table from best to worst performer:
 
@@ -92,7 +94,7 @@ The model results are shown in the following table from best to worst performer:
 
 ### Random Forest Classifier
 
-Fine tuned the model by GridSearchCV with the hyperparameters to reduce `false positive`s. Ran analysis by `{accuracy: {'criterion': 'entropy', 'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'random_state': 93} ` hyperparameters which produced metrics well:
+Fine tuned the model by **GridSearchCV** with the hyperparameters to reduce `false positive` rates. Ran analysis by `{accuracy: {'criterion': 'entropy', 'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'random_state': 93} ` hyperparameters which performed well:
 
 #### Dataset #1:
 ![](images/rf-dataset-1.png)
@@ -101,7 +103,7 @@ Fine tuned the model by GridSearchCV with the hyperparameters to reduce `false p
 ![](images/rf-dataset-2.png)
 
 ### Next Steps
-Those models will highlight negative customer experiences, so, `false positive` rate should be low but skipping detection of negative experience (`false negative`) is also important considering proactive outreach to customers unnecessarily not so desired on false positive cases. So, the model should minimize misclassifications therefore model `accuracy` should be high as well as the `precision`.
+These models highlight negative customer experiences, so, `false positive` rate should be low but not missing the detection of negative experience (`false negative`) is also important considering proactive outreach to customers unnecessarily not so desired on `false positive` cases. So, the model should minimize misclassifications therefore model `accuracy` should be high as well as the model `precision`.
 
 The models are binomial currently, in the next phase multinomial models should be tried out to predict negative experiences by a single model and dataset.
 
@@ -110,7 +112,7 @@ Performance would be improved by utilizing boosting or neural network for regres
 ------------
 
 ## Outline of Project
-The functionalities are separated into Jupyter notebook files to execute these following functions:
+The functionalities are separated into Jupyter notebook files to carry out the following functions:
 
 1. [data.eda.Aykan.ipynb](./data.eda.Aykan.ipynb) is for exploratory data analysis
 2. [LogisticRegression.Aykan.ipynb](./LogisticRegression.Aykan.ipynb) is for executing Logistic Regression model
