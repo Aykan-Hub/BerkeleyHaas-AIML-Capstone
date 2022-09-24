@@ -55,7 +55,6 @@ The datasets are cleaned up and ready-to-use, true nature of interactions are no
 |id   |prev_action_15   |prev_action_14   |prev_action_13   |prev_action_12   |prev_action_11   |prev_action_10   |prev_action_9 |prev_action_8 |prev_action_7 |prev_action_6 |prev_action_5 |prev_action_4 |prev_action_3 |prev_action_2 |prev_action_1 |action|
 |---|---------------|---------------|---------------|---------------|---------------|---------------|-------------   |--------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|------|
 |19059237|  104|  158|  131|  72|   179|  75|   75|   73|   180|  180|  179|  180|  75|   55|   75|   55|
-|73879930|  0| 0| 0| 75|   77|   162|  75|   75|   75|   75|   75|   111|  111|  55|   75|   55|
 
 ### Dataset #1:
 ![](images/dataset-1.png)
@@ -112,11 +111,10 @@ Performance would be improved by utilizing boosting or neural network for regres
 ## Outline of Project
 The functionalities are separated into Jupyter notebook files to execute these following functions:
 
-1.  ![data.eda.Aykan.ipynb](data.eda.Aykan.ipynb) is for exploratory data analysis
-2.  ![LogisticRegression.Aykan.ipynb](LogisticRegression.Aykan.ipynb) is for executing Logistic Regression model
-3.  ![DecisionTreeClassifier.Aykan.ipynb](DecisionTreeClassifier.Aykan.ipynb) is for executing Decision Tree Classifier model
-4.  ![RandomForestClassifier.Aykan.ipynb](RandomForestClassifier.Aykan.ipynb) is for executing Random Forest Classifier model
-
+1.  ![data.eda.Aykan.ipynb](./data.eda.Aykan.ipynb) is for exploratory data analysis
+2.  ![LogisticRegression.Aykan.ipynb](./LogisticRegression.Aykan.ipynb) is for executing Logistic Regression model
+3.  ![DecisionTreeClassifier.Aykan.ipynb](./DecisionTreeClassifier.Aykan.ipynb) is for executing Decision Tree Classifier model
+4.  ![RandomForestClassifier.Aykan.ipynb](./RandomForestClassifier.Aykan.ipynb) is for executing Random Forest Classifier model
 
 ------------
 
