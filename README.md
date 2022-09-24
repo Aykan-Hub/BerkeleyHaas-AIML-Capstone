@@ -2,7 +2,7 @@
 
 ------------
 
-by Aykan Erdenizmenli
+by **Aykan Erdenizmenli**
 
 ![](images/thumbs-up-customer-experience.png)
 
