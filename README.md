@@ -87,7 +87,7 @@ The expected result is predicting `action` column in the dataset by utilizing cu
 The model results are shown in the following table from best to worst performer per `test` set:
 
 |Model |Accuracy #1|Precision #1|Accuracy #2|Precision #2|
-|-------|------|-------|
+|-------|------:|-------:|------:|-------:|
 |Random Forest|0.92|0.94|0.92|0.92|
 |Decision Tree|0.90|0.91|0.90|0.90|
 |Logistic Regression|0.87|0.85|0.76|0.75|
