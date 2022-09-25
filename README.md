@@ -64,7 +64,7 @@ The datasets are cleaned up and ready-to-use, true nature of interactions are no
 ![](images/Feature_Importance-1.png)
 
 
-### Dataset #2 - Intertion `55`
+### Dataset #2 - Interaction `55`
 ![](images/dataset-2.png)
 
 #### Feature Importance Dataset #2
