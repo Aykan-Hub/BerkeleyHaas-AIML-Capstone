@@ -84,13 +84,13 @@ Binary classification techniques are used in the research, `Logistic Regression`
 
 The expected result is predicting `action` column in the dataset by utilizing customer history, there are two models per technique to predict action code = `55` and `142` respectively. `Random Forest Classifier` outperformed `Logistic Regression` and `Decision Tree Classifier` models significantly. The performance of `Random Forest Classifier` extremely high in `accuracy` and `precision` which is satisfactory.
 
-The model results are shown in the following table from best to worst performer:
+The model results are shown in the following table from best to worst performer per `test` set:
 
-|Model |Accuracy|Precision|
+|Model |Accuracy #1|Precision #1|Accuracy #2|Precision #2|
 |-------|------|-------|
-|Random Forest|0.92|0.92|
-|Decision Tree|0.90|0.90|
-|Logistic Regression|0.76|0.75|
+|Random Forest|0.92|0.94|0.92|0.92|
+|Decision Tree|0.90|0.91|0.90|0.90|
+|Logistic Regression|0.87|0.85|0.76|0.75|
 
 ### Random Forest Classifier
 
